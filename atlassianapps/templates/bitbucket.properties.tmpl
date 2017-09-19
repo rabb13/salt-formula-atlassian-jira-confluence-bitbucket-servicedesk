@@ -1,0 +1,11 @@
+# Do not modify this file unless instructed. It is here to store the location of the JIRA home directory only and is typically written to by the installer.
+#BITBUCKET_HOME = /srv/bitbucket-home
+{{ app_name }}_home = {{ atlassianapps.prefix }}/{{ app_name }}-home
+#>*******************************************************
+#> DB config at jdbc:postgresql://localhost:5432/bitbucketdb
+#>*******************************************************
+
+jdbc.driver={{ atlassianapps.db_driver }}
+jdbc.url=jdbc:{{ atlassianapps.db_type_name }}://{{ atlassianapps.db_server }}:{{ atlassianapps.db_port }}/{{ atlassianapps.db_name }}
+jdbc.user={{ atlassianapps.db_username }}
+jdbc.password={{ atlassianapps.db_password }}

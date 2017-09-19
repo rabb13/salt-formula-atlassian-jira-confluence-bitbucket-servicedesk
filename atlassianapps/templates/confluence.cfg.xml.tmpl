@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<confluence-configuration>
+  <setupStep>setupdata-start</setupStep>
+  <setupType>custom</setupType>
+  <buildNumber>7201</buildNumber>
+  <properties>
+    <property name="atlassian.license.message">AAABMQ0ODAoPeNptkFtLAzEQhd/zKwK+6ENKtkK3KQS0uyu07Pa2VUR8ma5TG9ymZZIt9t+bXsQqP gyEmXPOfJmrYmP5sLE8UlyqXhT3pOJJOudtGcUsRVeR2XqzsTrZ2GXdoK2QX5dIO6Sb1x7PdlA3c BCwhPD4SMGjPtiF7Ii2ZFUwtqDyZofaU4OnRumBPJJeQu2QhXAfJFkBptYEi4VpwWqNb3d25VoWP fvZc5GRmwqtw/l+iyNYo07GRZHNksF9zurT6AnJHTxtFpKtRwuBP/vcGtpfYMYiUmxM72CNO+9A5 3m4jIPau0D2wU5fHqS6P31+EeVQPYj+ZBaJ+HaWszIb6VAiV92ukh3JzmRBng/SX5Mj+KhZL5DGy 0cX+LSIvvX/k00aqlbg8O9hvwAYM5CZMCwCFH0Ad2CfJPvw9a7YKF3A1h+cO3lUAhQ4TNmXrP+v7 f+Kn4Rtg6Chwd4rKQ==X02fb</property>
+    <property name="attachments.dir">${confluenceHome}/attachments</property>
+    <property name="confluence.setup.server.id">BQXZ-SJ9F-BPR1-73RL</property>
+    <property name="confluence.webapp.context.path"></property>
+    <property name="hibernate.c3p0.acquire_increment">1</property>
+    <property name="hibernate.c3p0.idle_test_period">100</property>
+    <property name="hibernate.c3p0.max_size">60</property>
+    <property name="hibernate.c3p0.max_statements">0</property>
+    <property name="hibernate.c3p0.min_size">20</property>
+    <property name="hibernate.c3p0.timeout">30</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.isolation">2</property>
+    <property name="hibernate.connection.username">{{ atlassianapps.db_username }}</property>
+    <property name="hibernate.connection.password">{{ atlassianapps.db_password }}</property>
+    <property name="hibernate.connection.url">jdbc:{{ atlassianapps.db_type_name }}://{{ atlassianapps.db_server }}:{{ atlassianapps.db_port }}/{{ atlassianapps.db_name }}</property>
+    <property name="hibernate.database.lower_non_ascii_supported">false</property>
+    <property name="hibernate.dialect">com.atlassian.confluence.impl.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.setup">true</property>
+    <property name="jwt.private.key">MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBANrRluToRz1FE9wvrdeRxsrlLVfUhzwYjdZSLOMT5JZXKhK4C2TpTTR4klwVGGf5pNfRzvKuv8MWO7UElrfyXIw8ayPpNfqdhJPQ+DYs0zkkuD2IC94Ya6gChN0uAA3skWIOx5AgP1qb1sK9HnJVIotaJmQBUKmZlqBlYVxh8VVTAgMBAAECgYEAltHNElty9q0NAj+ur51fimsptJbc2zQFVwpuu9jzPhg3/Izz9YrEVv0fy+4SU2ADGWoYHLcLnzhM0PintYOL+ymjkixiTPWt+W1iFTmaHNyfnLCHz1bAQE8umkuYqxGA2I96rt/GXF0ZyNyo0wKME+iGYmWi41ILtA/EOf0iNVkCQQD8E8QSItzsHwmY0UUkt+xooCPL4MiLgL1htpGLCQVM9n4tmbPsizPKc2SeNnApy95ii2Rq4E6HY1ZaGCgQzyG9AkEA3jlTvwrbUSjhstYJX+6DgWrXlEdUvP8Bxt5HxTOgEMP72FHXFmEnB9m/Xrd/cDgWHDWQhkBWJYO5saZDgN5cTwJAcFvvHZZkmusKwA8nnsJMoiYfTpUXTvdHcvKJ1UtkDXYhr/m+9UTnBOqCgvMI89hne81eKTVqS3a/2tDBqxxokQJAHXkU9l2GQPlfFcz1aVfE8UEuXmgngPmBTtLkSe9S52ZW3JXeJQW1m4DxtKo5qLSHmi4wgN2/jzItSrZ2dX0IWQJATOoBZr3CT7EGo0yZaTg0SmW4xbB/0shhuX/0NujAQ3lHkCbsR4J3o9ZeQe08O1CvGnSjFCYFycRko1Q/qFx7cg==</property>
+    <property name="jwt.public.key">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDa0Zbk6Ec9RRPcL63XkcbK5S1X1Ic8GI3WUizjE+SWVyoSuAtk6U00eJJcFRhn+aTX0c7yrr/DFju1BJa38lyMPGsj6TX6nYST0Pg2LNM5JLg9iAveGGuoAoTdLgAN7JFiDseQID9am9bCvR5yVSKLWiZkAVCpmZagZWFcYfFVUwIDAQAB</property>
+    <property name="lucene.index.dir">${localHome}/index</property>
+    <property name="synchrony.btf">true</property>
+    <property name="synchrony.encryption.disabled">true</property>
+    <property name="synchrony.proxy.enabled">true</property>
+    <property name="webwork.multipart.saveDir">${localHome}/temp</property>
+  </properties>
+</confluence-configuration>

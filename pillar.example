@@ -1,0 +1,50 @@
+roles:
+  - postgres
+  - atlassianapps
+  - atlassianapps.jiraservicedesk
+#  - atlassianapps.dbdriver
+#  - postfix.config
+#  - hosts
+
+atlassianapps:
+  version: 3.5.0
+  db_type: 'postgres72'
+  db_type_name: 'postgresql'
+  db_driver: 'org.postgresql.Driver'
+  db_server: 'localhost'
+  db_port: '5432'
+  db_username: 'jira'
+  db_password: 'abcdefghijklmnop'
+
+  prefix: '/srv'
+  atlassianapps_home: '/srv/jira-home'
+  atlassianapps_hostname: 'jira.lan'
+  log_root: '/var/log/jira'
+  jvm_Xms: 2048m
+  jvm_Xmx: 2048m
+  use_https: true # set true only if you have nginx/apache running at front.
+  public_url: jira.example.com
+
+
+# although postgresql is not part of this formula, including pillar and should work with popular formulas.
+postgres:
+  use_upstream_repo: True
+  version: 9.4
+  pkg: postgresql-9.4
+  pkg_client: postgresql-client-9.4
+  pkgs_extra:
+    - postgresql-contrib-9.4
+  users:
+    jira:
+      ensure: present
+      password: abcdefghijklmnop
+      createdb: True
+      createroles: False
+      createuser: False
+  databases:
+    jiradb:
+      owner: jira
+      template: template0
+      lc_ctype: 'C'
+      lc_collate: 'C'
+
